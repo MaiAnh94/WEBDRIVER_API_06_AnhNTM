@@ -6,7 +6,7 @@ import org.testng.annotations.AfterClass;
 
 public class Topic_04_Button_Radio_Checkbox {
   @Test
-  public void f() {
+  public void TC_01() {
   }
   @BeforeClass
   public void beforeClass() {
