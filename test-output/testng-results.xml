@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25079" started-at="2018-09-10T11:35:55Z" finished-at="2018-09-10T11:36:20Z">
+  <suite name="Default suite" duration-ms="54604" started-at="2018-09-23T17:15:59Z" finished-at="2018-09-23T17:16:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25079" started-at="2018-09-10T11:35:55Z" finished-at="2018-09-10T11:36:20Z">
-      <class name="selenium_api.Topic_01_CheckEnvironment">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:selenium_api.Topic_01_CheckEnvironment@224aed64]" name="beforeClass" is-config="true" duration-ms="18120" started-at="2018-09-10T18:35:55Z" finished-at="2018-09-10T18:36:13Z">
+    <test name="Default test" duration-ms="54604" started-at="2018-09-23T17:15:59Z" finished-at="2018-09-23T17:16:54Z">
+      <class name="selenium_api.Topic_02_EXERCISE">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:selenium_api.Topic_02_EXERCISE@224aed64]" name="beforeClass" is-config="true" duration-ms="19140" started-at="2018-09-24T00:15:59Z" finished-at="2018-09-24T00:16:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_01_CheckBrowser()[pri:0, instance:selenium_api.Topic_01_CheckEnvironment@224aed64]" name="TC_01_CheckBrowser" duration-ms="5335" started-at="2018-09-10T18:36:13Z" finished-at="2018-09-10T18:36:18Z">
+        <test-method status="PASS" signature="TC_01_VerifyURLandtitle()[pri:0, instance:selenium_api.Topic_02_EXERCISE@224aed64]" name="TC_01_VerifyURLandtitle" duration-ms="11038" started-at="2018-09-24T00:16:18Z" finished-at="2018-09-24T00:16:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01_CheckBrowser -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:selenium_api.Topic_01_CheckEnvironment@224aed64]" name="afterClass" is-config="true" duration-ms="1607" started-at="2018-09-10T18:36:18Z" finished-at="2018-09-10T18:36:20Z">
+        </test-method> <!-- TC_01_VerifyURLandtitle -->
+        <test-method status="PASS" signature="TC_02_Loginempty()[pri:0, instance:selenium_api.Topic_02_EXERCISE@224aed64]" name="TC_02_Loginempty" duration-ms="3728" started-at="2018-09-24T00:16:29Z" finished-at="2018-09-24T00:16:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- selenium_api.Topic_01_CheckEnvironment -->
+        </test-method> <!-- TC_02_Loginempty -->
+        <test-method status="PASS" signature="TC_03_LoginwithEmailinvalid()[pri:0, instance:selenium_api.Topic_02_EXERCISE@224aed64]" name="TC_03_LoginwithEmailinvalid" duration-ms="5977" started-at="2018-09-24T00:16:33Z" finished-at="2018-09-24T00:16:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03_LoginwithEmailinvalid -->
+        <test-method status="PASS" signature="TC_04_LoginwithPasswordincorrect()[pri:0, instance:selenium_api.Topic_02_EXERCISE@224aed64]" name="TC_04_LoginwithPasswordincorrect" duration-ms="3897" started-at="2018-09-24T00:16:39Z" finished-at="2018-09-24T00:16:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04_LoginwithPasswordincorrect -->
+        <test-method status="PASS" signature="TC_05_Createanaccount()[pri:0, instance:selenium_api.Topic_02_EXERCISE@224aed64]" name="TC_05_Createanaccount" duration-ms="8418" started-at="2018-09-24T00:16:43Z" finished-at="2018-09-24T00:16:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_05_Createanaccount -->
+        <test-method status="PASS" signature="AfterClass()[pri:0, instance:selenium_api.Topic_02_EXERCISE@224aed64]" name="AfterClass" is-config="true" duration-ms="2380" started-at="2018-09-24T00:16:51Z" finished-at="2018-09-24T00:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+      </class> <!-- selenium_api.Topic_02_EXERCISE -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
