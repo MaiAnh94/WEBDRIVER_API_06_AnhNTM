@@ -17,9 +17,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
+@Test
 public class Topic_02_EXERCISE {
 	WebDriver driver ;
 	String email;
+	
   
   @BeforeClass
   public void beforeClass() {
@@ -28,7 +30,6 @@ public class Topic_02_EXERCISE {
 	  driver.manage().window().maximize();
   }
   
-  @Test
   public void TC_01_VerifyURLandtitle() {
 	  //truy cập trang web
 	  driver.get("http://live.guru99.com/");
@@ -57,7 +58,6 @@ public class Topic_02_EXERCISE {
 	  
   }
   
-  @Test
   public void TC_02_Loginempty() {
 	  //Truy cập vào trang
 	  driver.get("http://live.guru99.com/");
@@ -80,7 +80,6 @@ public class Topic_02_EXERCISE {
 	  
   }
   
-  @Test
   public void TC_03_LoginwithEmailinvalid() {
 	  //Truy cập vào trang
 	  driver.get("http://live.guru99.com/");
@@ -102,7 +101,6 @@ public class Topic_02_EXERCISE {
 	  
   }
   
-  @Test
   public void TC_04_LoginwithPasswordincorrect() {
 	  //Truy cập vào trang
 	  driver.get("http://live.guru99.com/");
@@ -123,7 +121,6 @@ public class Topic_02_EXERCISE {
 	  System.out.println(passErr1);
   }
   
-  @Test
   public void TC_05_Createanaccount() {
 	  //Truy cập vào trang
 	  driver.get("http://live.guru99.com/");
@@ -159,7 +156,15 @@ public class Topic_02_EXERCISE {
 	  driver.findElement(By.xpath("//div[@id='header-account']//a[text() ='Log Out']")).click();
 	  
 	  //Kiểm tra hệ thống navigate về Home page
-	  driver.navigate().refresh();
+	  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	  try {
+		Thread.sleep(8000);
+		driver.manage().timeouts().implicitlyWait(240, TimeUnit.SECONDS);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	  
   }
 
   @AfterClass
